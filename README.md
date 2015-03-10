@@ -3,7 +3,7 @@ Fix IP routes for multiple ethernet interfaces on Cloud VPS openstack platform.
 
 # Install dependencies:
 
-1. yum install php git 
+1. yum install git 
 
 # Setup script
 
