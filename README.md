@@ -25,5 +25,5 @@ sh setup.sh
 
 This software is free to use! If you love this software, please buy me a cup of coffee!
 
-<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=postbus%40rubenharms%2enl&lc=NL&item_name=Ruben%20Harms&item_number=openstackroutefix&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="[paypal]" /></a>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=3M7CDKARQEZXN"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="[paypal]" /></a>
 
