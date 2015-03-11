@@ -200,9 +200,7 @@ THE SOFTWARE.' . "\r\n\r\n");
         
         $output->write("\r\nUpdating routes...");
         
-        foreach ($routeCommands as $command) {
-            $output->writeln($command);
-          exec($command, $ou, $ret);
+        foreach ($routeCommands as $command) {          
           if($ret){
               $output->writeln("<error>Error: Unable to add route!</error>");
               return $this->rollbackChanges($output, $rcLocalBack, $rtBack );  
