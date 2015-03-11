@@ -201,6 +201,7 @@ THE SOFTWARE.' . "\r\n\r\n");
         $output->write("\r\nUpdating routes...");
         
         foreach ($routeCommands as $command) {
+            $output->writeln($command);
           exec($command, $ou, $ret);
           if($ret){
               $output->writeln("<error>Error: Unable to add route!</error>");
