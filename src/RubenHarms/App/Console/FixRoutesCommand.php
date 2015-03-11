@@ -116,7 +116,7 @@ THE SOFTWARE.' . "\r\n\r\n");
         
         $output->writeln("\r\n<comment>Your current ethernet configuration:</comment>\r\n");
         
-        $output->writeln("DEVICE\t\t|IP\t\t\t|GATEWAY");
+        $output->writeln("DEVICE\t\t|IP\t\t\t\t|GATEWAY");
         $output->writeln("---------------------------------------------------");
         
         foreach ($eth as $key => $nic) {
@@ -235,11 +235,12 @@ THE SOFTWARE.' . "\r\n\r\n");
         
         $path = '/etc/rc.local';
         $rcLocal = file_get_contents($path);
+        $rcLocal = preg_replace("|#!/bin/sh|s", "", $rcLocal);
         
         if (preg_match("|(#/START RHFIX)(.*)(#/END RHFIX)|s", $rcLocal))
             $rcLocal = preg_replace("|(#/START RHFIX)(.*)(#/END RHFIX)|s", $rcRules, $rcLocal);
         else
-            $rcLocal = $rcRules . $rcLocal;
+            $rcLocal = "#!/bin/sh\n\n" . $rcRules . $rcLocal;
         
         if (! file_put_contents($path, $rcLocal)) {
             $output->writeln("<error>Error: Unable to add route for next boot</error>");
