@@ -1,13 +1,13 @@
 # OpenStackFixRoutes
 Fix IP routes for multiple ethernet interfaces on Cloud VPS openstack platform, **currently for Red Hat based linux distributions only**
 
-# Install dependencies:
+## Install dependencies:
 
 ``` bash
  yum install php git
 ```
 
-# Setup script
+## Setup script
 
 ``` bash
 cd /usr/src
@@ -16,7 +16,7 @@ cd OpenStackFixRoutes
 sh setup.sh
 ```
 
-# Run script
+## Run script
 ``` bash
 ./routefix
 ```
