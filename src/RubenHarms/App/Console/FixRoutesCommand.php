@@ -58,10 +58,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.' . "\r\n\r\n");
         
-        $version = `uname -a`;
+        $version = `cat /proc/version`;
         
-        if (! preg_match("/CentOs/i", $version) && ! preg_match("/Ubuntu/i", $version)) {
-            $output->writeln("<error>Error: This software is for CentOS only!</error>");
+        if (! preg_match("/Red Hat/i", $version)) {
+            $output->writeln("<error>Error: This software is Red hat / CentOS / Fedora core only!</error>");
             return;
         }
         
