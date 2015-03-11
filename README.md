@@ -17,5 +17,5 @@ sh setup.sh
 
 # Run script
 ``` bash
-./fixroute
+./routefix
 ```
