@@ -1,5 +1,5 @@
 # OpenStackFixRoutes
-Fix IP routes for multiple ethernet interfaces on Cloud VPS openstack platform. 
+Fix IP routes for multiple ethernet interfaces on Cloud VPS openstack platform, **currently for Red Hat based linux distributions only**
 
 # Install dependencies:
 
