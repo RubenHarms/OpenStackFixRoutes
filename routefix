@@ -1,0 +1,6 @@
+#!/bin/bash
+
+PHP_PATH=`which php`
+$PHP_PATH -e application.php routefix
+
+

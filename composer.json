@@ -1,0 +1,12 @@
+{
+  "name" : "Openstack Fix Routes",
+  "version" : "0.01",
+  "require" : {
+    "symfony/console" : "=v2.6.4"
+  },
+  "autoload": {
+    "psr-4": {
+        "RubenHarms\\" : "src/RubenHarms"
+    }
+  }
+}
