@@ -12,10 +12,10 @@ Fix IP routes for multiple ethernet interfaces on Cloud VPS openstack platform.
 ``` bash
 git clone https://github.com/RubenHarms/OpenStackFixRoutes.git
 cd OpenStackFixRoutes
-sh update.sh
+sh setup.sh
 ```
 
 # Run script
 ``` bash
-./fixroutes
+./fixroute
 ```
