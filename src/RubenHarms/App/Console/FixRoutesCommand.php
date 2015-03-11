@@ -235,13 +235,14 @@ THE SOFTWARE.' . "\r\n\r\n");
         
         $path = '/etc/rc.local';
         $rcLocal = file_get_contents($path);
-        $rcLocal = preg_replace("|#!/bin/sh|s", "", $rcLocal);
+       
         
         if (preg_match("|(#/START RHFIX)(.*)(#/END RHFIX)|s", $rcLocal))
             $rcLocal = preg_replace("|(#/START RHFIX)(.*)(#/END RHFIX)|s", $rcRules, $rcLocal);
-        else
-            $rcLocal = "#!/bin/sh\n\n" . $rcRules . $rcLocal;
-        
+        else {
+            
+            $rcLocal = "#!/bin/sh\n\n" . $rcRules .  preg_replace("|#!/bin/sh|s", "", $rcLocal);
+        }
         if (! file_put_contents($path, $rcLocal)) {
             $output->writeln("<error>Error: Unable to add route for next boot</error>");
             return $this->rollbackChanges($output, $rcLocalBack, $rtBack );           
