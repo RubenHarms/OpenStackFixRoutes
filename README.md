@@ -1,5 +1,5 @@
 # OpenStackFixRoutes
-Fix IP routes for multiple ethernet interfaces on Cloud VPS openstack platform, **currently for Red Hat based linux distributions only**
+Fix IP routes for multiple ethernet interfaces on Cloud VPS openstack platform, **currently for Red Hat based linux distributions only.**
 
 ## Install dependencies:
 
@@ -20,6 +20,11 @@ sh setup.sh
 ``` bash
 ./routefix
 ```
+
+## Direct Admin
+
+If you use DA, you just have to add the IP addresses after running this script. If you already added the IP addresses in DA, please remove them before you run this script. You could safely ignore the warnings of DA.
+
 
 # Donations
 
