@@ -20,3 +20,10 @@ sh setup.sh
 ``` bash
 ./routefix
 ```
+
+# Donations
+
+This software is free to use! If you love this software, please buy me a cup of coffee!
+
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=postbus%40rubenharms%2enl&lc=NL&item_name=Ruben%20Harms&item_number=openstackroutefix&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHostedGuest"><img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" alt="[paypal]" /></a>
+
